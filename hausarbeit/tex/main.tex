@@ -1,35 +1,24 @@
-%-------------------
-%Head Area
-%-------------------
+%
+% TODO: 
+% Abbildungsreferenzen werden nicht gesetzt!!!!
+% Anhänge referenzieren
+%
+\documentclass[11pt]{scrartcl}
 
-%DIN-A4-Seite und die Schriftgrš§e 12.
-\documentclass[a4paper,12pt]{scrartcl} 
+% own geometry
+\usepackage[a4paper, left=3cm, right=3cm]{geometry}
 
-%Deutsche mit Umlauten
-\usepackage[utf8]{inputenc}
-\usepackage[ngerman]{babel}
+\usepackage[ngerman]{babel} 
+\usepackage[utf8]{inputenc} 
 \usepackage[T1]{fontenc}
-
-%Clickable ToC
-\usepackage{hyperref}
-
-% ToC Depth
-\setcounter{tocdepth}{3}
-\setcounter{secnumdepth}{3}
-
 \usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
 
-% 1 1/2 padding
-\usepackage{setspace}
-
-%Indentation Definitions
-\setlength{\parindent}{0em}
-
-%Border Definitons
-\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry} 
-
-%padding between footnotes
-\deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark\ }}
+% setup of source code listings
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{caption}
 
 %-------------------
 % Begin Document Main
@@ -37,45 +26,19 @@
 \begin{document}
 
 
-%Beginn der Titelseite
-\begin{titlepage}
-\begin{flushright}
-	\includegraphics[scale=0.8,keepaspectratio]{img/hs_os.png}
-\end{flushright}
+\author{ Oliver Erxleben \\ \\ Hochschule Osnabr"uck \\
+Ingenieurswissenschaften und Informatik \\ Informatik - Mobile und Verteilte Anwendungen
+\\ \\ oliver.erxleben@hs-osnabrueck.de }
 
-\begin{flushleft}
-\vfill{
-Hochschule Osnabrück\\ 
-Ingenieurswissenschaften und Informatik \\ 
-Wintersemester 2012/13} \\
-Modul: Projektmanagement und Führungstheorien
-\end{flushleft}
+\title{\includegraphics[scale=0.75,keepaspectratio]{img/hs_os.png}\linebreak \linebreak
+Probleme im Projektmanagement und Führungstipps}
 
-\begin{center}
-\begin{Large}
-\vfill{\textsf{\textbf{
-Probleme im Projektmanagement und Führungstipps }}}
-\end{Large}
-\end{center}
-
-\begin{small}
-\vfill Oliver Erxleben \\ Egelshove 40 \\  48163 Münster \\  oliver.erxleben@hs-osnabrueck.de\\ 
-\today
-\end{small}
-
-\end{titlepage}
-%Ende der Titelseite
-
-
-%Inhaltsverzeichnis (aktualisiert sich erst nach dem zweiten Setzen)
-\tableofcontents
+\maketitle
 \thispagestyle{empty}
 
-%Beginn einer neuen Seite
-\clearpage
+\tableofcontents
 
-%Anderthalbzeiliger Zeilenabstand ab hier
-\onehalfspacing
+\pagebreak
 
 \pagestyle{plain}
 
