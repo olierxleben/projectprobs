@@ -6,7 +6,7 @@
 \documentclass[11pt]{scrartcl}
 
 % own geometry
-\usepackage[a4paper, left=3cm, right=3cm]{geometry}
+\usepackage[a4paper, left=2cm, right=2cm]{geometry}
 
 \usepackage[ngerman]{babel} 
 \usepackage[utf8]{inputenc} 
@@ -22,6 +22,13 @@
 \usepackage{listings}
 \usepackage{courier}
 \usepackage{caption}
+
+\usepackage{fancyhdr}
+\fancyfoot[C]{}
+\fancyfoot[R]{Seite \thepage} %Seitennummer
+\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
+
+
 
 %-------------------
 % Begin Document Main
@@ -47,10 +54,13 @@ Ingenieurswissenschaften und Informatik \\ Informatik - Mobile und Verteilte Anw
 \thispagestyle{empty}
 \pagebreak
 
-\pagestyle{plain}
+\pagestyle{fancy}
 % hoooray page 1! begins 
 \setcounter{page}{1} 
 \section{Einleitung}
+Studien !!!!! belegen, dass weitaus mehr Projekte in Unternehmen scheitern, als das sie Erfolg haben. Woran liegt das? Zum Einen 
+\\
+Das Ziel dieser Arbeit ist es typische Probleme im Projektmanagement und im Projektverlauf zu verdeutlichen, sowie Tipps und Ideen zu vermitteln eben jene Probleme zu beseitigen - oder besser - vorzubeugen.
 
 \cite{tipps_zum_pm}
 
@@ -70,6 +80,12 @@ Das letzte Kapitel des Hauptteils 4: Projektabschluß beschäftigt sich mit dem 
 Im Teil Fazit werden Erkenntnisse aus dem Hauptteil zusammengefast und bewertet. 
 \subsection{Was ist ein Projekt?}
 
+
+\begin{quote}
+\colorbox{blue!5}{\textbf{Das Geheimnis des Erfolges ist die Beständigkeit des Ziels.}}\footnote{Benjamin Disraeli, britischer Schriftsteller u. Premierminister (21. Dez. 1804 - 19. April 1881)}
+\end{quote}
+Ein Projekt verfolgt immer ein Ziel, also eine bestimmte \textit{Zielvorgabe}. Zum Beispiel die Umsetzung eines Auftragsarbeit, oder die Erstellung einer Smartphone-Anwendung. Die Zielvorgabe besteht aus mehreren Einzelaufgaben und 
+
 \subsection{Projektphasen}
 
 Projektphasen lassen sich im groben in drei Bereiche einteilen: Planung, Durchführung und Abschluss. 
@@ -80,14 +96,14 @@ Projektphasen lassen sich im groben in drei Bereiche einteilen: Planung, Durchf�
 \section{Projektphase 1: Planung}
 \framebox{
 	\colorbox{red!20}{
-		\parbox{0.5\textwidth}{
+		\parbox{0.44\textwidth}{
 Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod.
 		}
 	}
 }
 \framebox{
 	\colorbox{green!20}{
-		\parbox{0.5\textwidth}{
+		\parbox{0.44\textwidth}{
 Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend option. Amet consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt ut laoreet. In iis qui facit eorum; claritatem Investigationes demonstraverunt lectores legere me. In vulputate velit esse molestie consequat vel illum dolore. Wisi enim ad minim, veniam quis nostrud exerci. Facer possim assum typi non habent claritatem insitam est usus legentis lius quod.
 		}
 	}
@@ -101,9 +117,9 @@ Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend opti
 \pagebreak
 \section{Projektphase 3: Abschluss und Ergebnis} 
 
-%Beginn einer neuen Seite
+%Beginn einer neuen Seite ohne Kopf- und Fußzeile
 \clearpage
-
+\thispagestyle{empty}
 \bibliography{bib/bibliography}{}
 \bibliographystyle{alphadin}
 
