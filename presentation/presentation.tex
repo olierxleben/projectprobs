@@ -1,0 +1,46 @@
+\documentclass[10pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[german,lined]{algorithm2e}
+\usepackage{float}
+
+\usetheme{Rochester}
+\useinnertheme{rectangles}
+\useoutertheme{default}
+
+\lstset{
+	basicstyle=\small\ttfamily,
+	keywordstyle=\color{blue},
+	showstringspaces=true}
+
+\title{Probleme im Projektmanagement und Führungstipps}
+\author{Oliver Erxleben}
+\institute{Hochschule Osnabrück}
+\date{\today}
+
+\setitemize{label=\usebeamerfont*{itemize item}%
+  \usebeamercolor[fg]{itemize item}
+  \usebeamertemplate{itemize item}}
+
+\begin{document}
+	\frame{\titlepage}
+	
+	\begin{frame}{Folie}
+		\begin{itemize}
+			\item Aufteilung des Projekts in unabhängige Module, Bibliotheken und Anwendungen.
+			\item Parsing der Intel HEX-Dateien und Kommunikation mit dem ZPU-Treiber in jeweils eigene Bibliotheken, die dann aus Anwendungen heraus genutzt werden.
+			\item Die erstellten Bibliotheken sind anwendungsunabhängig und können später auch in Drittanwendungen verwendet werden.
+		\end{itemize}
+	\end{frame}
+
+
+
+\end{document}
