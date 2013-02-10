@@ -21,35 +21,7 @@
 \usepackage{listings}
 %\usepackage{courier}
 \usepackage{caption}
-\lstset{
-	basicstyle=\footnotesize\ttfamily,	% default font
-	numbers=left,						% line numbers placement
-	numberstyle=\tiny,					% line numbers style
-	%stepnumber=2,						% line number padding
-	numbersep=5pt,						% padding between line numbers and code
-	tabsize=2,							% 
-	extendedchars=true,         
-	breaklines=true,						% line breaks 
-	keywordstyle=\color{red},
-	frame=b,
-	stringstyle=\color{gray}\ttfamily,	% color of strings in code
-	showspaces=false,					% visualize spaces
-    showtabs=false,						% visualize tabs
-    xleftmargin=17pt,
-	framexleftmargin=17pt,
-	framexrightmargin=5pt,
-	framexbottommargin=4pt,
-	showstringspaces=false				% visualize spaces in strings        
- }
- 
- \lstloadlanguages{% Check docs for further languages ...
-         C,
-         C++,
-         bash
- }
 
-\setlength{\parindent}{0pt}
-\setlength{\parskip}\medskipamount
 
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
@@ -71,19 +43,34 @@
 % Document begins now
 \begin{document}
 
-\author{%
-	Martin Helmich \small(\href{mailto:martin.helmich@hs-osnabrueck.de}{martin.helmich@hs-osnabrueck.de})\\%
+\author{
 	Oliver Erxleben \small(\href{mailto:oliver.erxleben@hs-osnabrueck.de}{oliver.erxleben@hs-osnabrueck.de})\\ \\%
 	%
 	Hochschule Osnabr"uck \\%
 	Ingenieurswissenschaften und Informatik \\%
 	Informatik - Mobile und Verteilte Anwendungen }
 
-\title{\includegraphics[scale=0.75,keepaspectratio]{img/hs_os.png}\linebreak \linebreak Parallelisierung mit OpenMP}
+\title{\includegraphics[scale=0.75,keepaspectratio]{img/hs_os.png}\linebreak \linebreak Probleme im Projektmanagement und Führungstipps}
 
 \maketitle
 \thispagestyle{empty}
+\pagebreak
+\thispagestyle{empty}
 \tableofcontents
+
+\pagebreak
+\thispagestyle{empty}
+\begin{abstract}
+\textbf{Zusammenfassung}\\
+Die vorliegende Arbeit wurde mit LaTex verfasst und ist eine Arbeit von Oliver Erxleben für das Modul \textit{Projektmanagement und Führungstheorien} aus dem Master-Studiengang \textit{Informatik - Verteilte und Mobile Anwendungen} der \textit{Hochschule Osnabrück / University of Applied Sciences}.\\
+\\
+Thema der Arbeit lautet \textbf{Probleme im Projektmanagement und Führungstipps}. Es wird auf typische Problemstellen eines Projekts eingegangen, mit der das Projektmanagement konfrontiert wird. Die einzelnen Probleme werden dabei aus Sicht verschiedener Projektbeteiligter dargestellt.\\
+Die Arbeit ist in mehrere Abschnitte aufgeteilt. In der Einleitung wird nach der Motivation für Probleme im Projektmanagement auf Eckdaten und Begriffsefinitionen eingegangen.\\
+Die darauffolgenden Abschnitte sind grob in die Phasen eines Projekts aufgeteilt, in der Probleme dieser Phase geschildert und analysiert werden. Nach jedem Abschnitt findet sich eine kurze pragmatische Zusammenfassung in der auch Tipps zur Problembewältigung gegeben werden.\\
+Im letzten Abschnitt werden die Erkenntnisse resümiert und ein Ausblick gegeben, wie Problemen in Zukunft vorgebeugt werden können.\\
+\\
+Es sei erwähnt dass die Arbeit auf IT-Projekte abzielt. Besonders werden IT-Projekte, bzw. Projekte in der Software-Entwicklung betrachtet. Projektmanagement aus anderen Branchen, wie Bauingenieurswesen oder Projektmanagement in der Pflege, wird in dieser Arbeit nicht betrachtet. 
+\end{abstract}
 
 \pagebreak
 % set new page style
@@ -92,16 +79,20 @@
 \setcounter{page}{1} 
 
 \section{Einleitung}
-Studien !!!!! belegen, dass weitaus mehr Projekte in Unternehmen scheitern, als das sie Erfolg haben. Woran liegt das? Zum Einen 
+Studien !!!!! belegen, dass weitaus mehr Projekte in Unternehmen scheitern, als das sie Erfolg haben. Das nachfolgende Diagramm stellt 
 \\
-Das Ziel dieser Arbeit ist es typische Probleme im Projektmanagement und im Projektverlauf zu verdeutlichen, sowie Tipps und Ideen zu vermitteln eben jene Probleme zu beseitigen - oder besser - vorzubeugen.
+Das Ziel dieser Arbeit ist es typische Probleme im Projektmanagement und im Projektverlauf aufzuzeigen, sowie Tipps und Ideen zu vermitteln wie Projektbeteiligte in Problemsituationen reagieren könnte um kritische Pässe innerhalb des Projekts zu meistern oder gar vorzubeugen. \\
+Werden 
 
-\cite{tipps_zum_pm}
+Warum ist Projektmanagement wichtig? Überleitung zu Projektmanagementproblem, da trotz PM viele Projekte scheitern
+
+\cite{tippsPM}
 
 \cite{studie_verhalten_projektmitarbeiter}
 
+% TODO: überarbeiten
 \subsection{Aufbau und Ablauf der Arbeit}
-Die vorliegende Arbeit gliedert sich in vier Teile: Einleitung, Projektplanung, Projektdurchführung, Projektabschluss und Fazit, wobei die Kapitel zwei bis vier den Hauptteil der Arbeit ausmachen. Nach jedem Hauptteil der Arbeit wird eine Gegenüberstellung von Problem und Lösung geliefert. 
+Die vorliegende Arbeit gliedert sich in vier Teile: Einleitung, Projektplanung, Projektdurchführung, Projektabschluss und Fazit, wobei die Kapitel zwei bis vier den Hauptteil der Arbeit ausmachen. 
 \\ \\
 Im einleitenden Teil wird der Problembereich erläutert und es werden wichtige Begriffe für die weiteren Teile definiert und von einander abgegrenzt. 
 \\ \\
@@ -111,7 +102,9 @@ Im Hauptteil 3: Projektdurchführung werden typische Szenarien und Probleme wäh
 \\ \\
 Das letzte Kapitel des Hauptteils 4: Projektabschluß beschäftigt sich mit dem erfolgreichen oder nicht-erfolgreichen Projektabschluß und gibt auch hier beispielhafte Problemsituationen und Lösungsansätze. 
 \\ \\
-Im Teil Fazit werden Erkenntnisse aus dem Hauptteil zusammengefast und bewertet. 
+Im Teil Fazit werden Erkenntnisse aus dem Hauptteil zusammengefast und bewertet.
+\\ \\
+Nach jedem Abschnitt aus dem Hauptteil werden Probleme zusammengefasst und als Gegenüberstellung mit Lösungsanseätzen gelistet. 
 \subsection{Was ist ein Projekt?}
 
 
@@ -126,10 +119,36 @@ Projektphasen lassen sich im Groben in drei Bereiche einteilen: Planung, Durchf�
 
 \subsection{Projektbeteiligte}
 
-Typische Rollen eines Projekt lassen sich in drei Teile gliedern
+Typische Rollen eines Projekt lassen sich in
+
+\subsection{Faktoren für Projekterfolg}
+
+Typische Merkmale für den Erfolg eines Projekts sind, nach IKMT:
+\begin{itemize}
+\item{Planung und Organisation}
+\item{Aufgabenanalyse}
+\item{Kunden- und Anwenderbeteiligung}
+\item{}
+\end{itemize}
+
+% TODO: Diagram hier
 
 \pagebreak
-\section{Projektphase 1: Planung}
+\section{Probleme während der Projektphasen}
+
+\subsection{Planungsphase}
+
+\subsection{Projektverlauf}
+
+\subsection{Projektabschluß}
+
+In der Planungsphase eines Projekts ist die Aufgabe des Projektmanagements vor allem die Aufstellung des Projektziels und der zugehörigen Teilaufgaben jeder Projektphase. Weiterhin muss eine Projektorganisation ausgearbeitet werden. \\
+Ein Problem, welches aber oft erst in der Durchführungsphase erst erkannt wird ist die \textbf{nicht ausreichende, schlechte Definition des Projektziels, bzw. dessen Teilziele}.
+ 
+% TODO: Gegenüberstellung
+\pagebreak
+
+
 \framebox{
 	\colorbox{red!20}{
 		\parbox{0.44\textwidth}{
@@ -148,16 +167,31 @@ Dolore te feugait nulla facilisi nam liber tempor cum soluta nobis eleifend opti
 \pagebreak
 
 \pagebreak
-\section{Projektphase 2: Realisierung und Steuerung} 
+\section{Probleme im Projektverlauf} 
+
+Während des Projektverlaufs entstehen oft Probleme, die entweder schon in der Planungsphase entstanden sind und sich bisher durch das Projekt "geschlängelt" haben oder aber 
+
+\subsection{Change Management}
+
+\subsection{}
 
 \pagebreak
-\section{Projektphase 3: Abschluss und Ergebnis} 
+\section{Probleme beim Abschluss eines Projekts} 
+\cite{profPM}
+\cite{scriptPM}
+\cite{chaosReportCriteria}
+
+\section{Mangelhafte Kommunikation}
+\section{schlechte Vorbereitung und Planung}
+\section{Unklare Rollenverteilung}
+\section{mangelnde Ressourcenverteilung}
+
 
 \section{Fazit}
 
 \pagebreak
 \addcontentsline{toc}{section}{Literaturverzeichnis} % Eintrag ins Inhaltsverzeichnis
-\bibliography{bib/bib}
+\bibliography{bib/bibliography}
 
 \appendix
 
