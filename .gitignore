@@ -34,4 +34,5 @@
 main.pdf
 presentation.pdf
 
-main.url
+*.url
+hausarbeit/tex/.texpadtmp/main.url
