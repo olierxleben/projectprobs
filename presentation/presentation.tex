@@ -20,10 +20,10 @@
 	basicstyle=\small\ttfamily,
 	keywordstyle=\color{blue},
 	showstringspaces=true}
-
+% TODO: Logo
 \title{Probleme im Projektmanagement und Führungstipps}
 \author{Oliver Erxleben}
-\institute{Hochschule Osnabrück}
+\institute{\includegraphics[width=0.35\textwidth]{images/hs_os}\\ Ingenieurswissenschaften und Informatik\\ Projektmanagement und Führungstheorien}
 \date{\today}
 
 \setitemize{label=\usebeamerfont*{itemize item}%
@@ -48,16 +48,18 @@
 			\item{Projektmitarbeiter}
 			\item{Projektleiter}
 			\item{Projektmanagement}
-			\item{Stakeholder}
+			\item{Auftraggeber}
 		\end{itemize}
 
 	\end{frame}
 	
-	% TODO: noch zwei Punkte
-	\begin{frame}{Projekte scheitern}
+	\begin{frame}{Projekte scheitern\footnote{http://www.domendos.com/fachlektuere/fachartikel/artikel/scheitern-von-it-projekten/}}
 		\begin{itemize}
-			\item{ca. 60 \% der Projekte scheitern oder werden nicht innerhalb des Zeitplans beendet}
-			\item{Problem des Projektmanagements? }
+			\item{46 \% der IT-Vorhaben haben nicht o. nur teilweise die Wünsche und Anforderungen der Auftraggeber erfüllt.
+(„Chaos Report“ der Standish Group 2006)}
+			\item{20 \% aller IT-Projekte werden abgebrochen}
+
+			\item{Nur 16 \% der untersuchten IT-Projekte können als erfolgreich eingestuft werden. (Studie der Universität Oxford 2003)}
 		\end{itemize}
 	\end{frame}
 
@@ -66,7 +68,7 @@
 	
 	\begin{frame}{Faktoren für Projekt(-miss-)erfolg}
 		
-		Eine Studie der GPM: Erfolg und Scheitern von 2008 erhob Daten aus: 
+		Eine Studie der GPM\footnote{Deutsche Gesellschaft für Projektmanagement e.V.}: Erfolg und Scheitern von 2008 erhob Daten aus: 
 		\begin{itemize}
 			\item{Befragung von 79 Unternehmen, mit hohem Anteil aus Mobilindustrie, Consulting, IT, Versicherung u. Bank }
 			\item{überweigend Organisationen mit mehr als 1000 Mitarbeitern}
@@ -76,7 +78,7 @@
 	\end{frame}
 
 	\begin{frame}{Faktoren für Projekt(-miss-)erfolg 2}
-	Ergebnis der Studie:
+	Ergebnis (Top-10):
 		\begin{center}
 			\includegraphics[width=1\textwidth]{images/studie_erfolgsfaktoren}
 		\end{center}
@@ -84,7 +86,7 @@
 	\end{frame}
 
 	\begin{frame}{Faktoren für Projekt(-miss-)erfolg 3}
-		Nach Gruppierung der Antworten, wurden folgende Top-5 Probleme festgestellt:
+		Nach Gruppierung der Antworten wurden folgende Top-5 Probleme festgestellt:
 		\begin{itemize}
 			\item{Kommunikation}
 			\item{Unklare Ziele}
@@ -107,9 +109,9 @@
 %	\end{frame}
 
 	% Mark: Problem Kommunikation
-	\thispagestyle{empty}
-	\begin{frame}
-		''Der Widerspruch zwischen dem, was gesagt wird, und dem, was gemeint ist, ist sehr groß. Man muß ihn herausfinden.'' \\ 
+	\begin{frame}{Kommunikation}
+		
+		\textbf{''Der Widerspruch zwischen dem, was gesagt wird, und dem, was gemeint ist, ist sehr groß. Man muß ihn herausfinden.''}\\ 
 		- \textit{Friedrich Eberling (Vorstandsvorsitzender Braun und Brunnen AG)}
 	\end{frame}
 
@@ -121,28 +123,34 @@
 			\item{Sprachunterschiede in interkulturellen Projekten}
 			\item{Dokumentation}
 			\item{Informationen freigeben oder behalten}
-			\item{Interessenskonflikte}
+			\item{Rivalität, Soziale Beziehungen}
 		\end{itemize}
 	\end{frame}
 	
-	% TODO: Beispiel 
-	\begin{frame}{Kommunikationsprobleme - Beispiel}
-		
+	\begin{frame}{Kommunikationsprobleme - Beispiele}
+		\begin{itemize}
+			\item{''... das finden Sie doch alles ganz einfach in den in den Wikis von Connections... ''}
+			\item{''HTTP-Header? Das versteht doch keiner...''}
+			\item{''Ich versteh die Inder immer nicht...''}
+			\item{''Genau DAS werden wir im Meeting nicht sagen...''}
+		\end{itemize}
+
 	\end{frame}
 	
 	\begin{frame}{Kommunikationsprobleme - Tipps}
 		\begin{itemize}
-			\item{zuviel Kommunikation ist besser als zuwenig}
 			\item{regelmäßige Treffen mit allen Projektbeteiligten}
-			\item{einrichten eines Besprechungsmanagements}
+			\item{Bei Bedarf Einrichtung eines Besprechungs-, Konflikt- und Eskalationsmanagements}
 			\item{Dokumentationskriterien festlegen}
+			\item{Feedback geben}
+			\item{zuviel Kommunikation ist besser als zuwenig}
 		\end{itemize}
 	\end{frame}
 
 	% Mark: Problem Projektziele
-	\thispagestyle{empty}
-	\begin{frame}
-		''Fleiß für die falschen Ziele ist noch schädlicher als Faulheit für die richtigen.'' \\
+
+	\begin{frame}{Unklare Projektziele}
+		\textbf{''Fleiß für die falschen Ziele ist noch schädlicher als Faulheit für die richtigen.''} \\
 		- \textit{Peter Bamm (1897 - 1975, dt. Arzt u. Schriftsteller)}
 	\end{frame}
 
@@ -150,10 +158,10 @@
 	\begin{frame}{Problem der unklaren Projektziele}
 		Unklare Ziele führen zu:
 		\begin{itemize}
-			\item{hohen Projektkosten}
+			\item{erhöhten Projektkosten}
 			\item{Verschwendung von Projektressourcen}
 			\item{noch mehr Kommunikation}
-			\item{Verschiebung des Zeitplans}
+			\item{Nicht-Einhaltung des Zeitplans}
 		\end{itemize}
 
 	\end{frame}
@@ -172,7 +180,7 @@ verbessern
 	\colorbox{green!20}{
 		\parbox{0.4\textwidth}{
 
-Support-Request-Response-Zeiten\\ 
+Request-Response-Zeiten des Ticket-Systems\\ 
 um 10 \% bis 31.12.2013 reduzieren. 
 		}
 	}
@@ -181,19 +189,20 @@ um 10 \% bis 31.12.2013 reduzieren.
 		
 	\end{frame}
 
-	% TODO: überarbeiten
 	\begin{frame}{Projektziele richtig definieren}
 		\begin{itemize}
-			\item{Mehrere kleinere genau defineirte Projektziele}
+			\item{Mehrere kleinere genau definierte Projektziele}
 			\item{Meilensteine}
-			\item{SMART}
+			\item{S.M.A.R.T. dt.: Spezifisch, Messbar, Akzeptiert, Realistisch, Terminierbar}
+			\item{Positive Formulierung}
+			\item{Aktive Formulierung}
 		\end{itemize}
 	\end{frame}
 
-	\thispagestyle{empty}
-	\begin{frame}
-		''Führen ist eine besondere Kategorie des Dienens.''\\
-		 - \textit{Hans L. Merkle (1913-2000), dt. Topmanager, 1963-84 Vors. d. GF Bosch AG}
+
+	\begin{frame}{Position des Projektleiters}
+		\textbf{''Führen ist eine besondere Kategorie des Dienens.''}\\
+		 - \textit{Hans L. Merkle (1913-2000), 1963-84 Vors. d. GF Bosch AG}
 	\end{frame}
 
 	\begin{frame}{Position des Projektleiters}
@@ -201,9 +210,11 @@ um 10 \% bis 31.12.2013 reduzieren.
 			\item{Soft Skills}
 			\item{Erfahrung}
 			\item{Motivation}
+			\item{Kompetenz}
+			\item{klare Befugnisse}
 		\end{itemize}
 
-		Problem, wenn der Projektleiter
+		Problem, wenn die Position des Projektleiters
 		\begin{itemize}
 			\item{zu hoch}
 			\item{zu niedrig} 
@@ -218,58 +229,60 @@ um 10 \% bis 31.12.2013 reduzieren.
 
 	\begin{frame}{Projektleiter - Tipps}
 		\begin{itemize}
-			\item{Anreize schaffen}
-			\item{PL und PM integrieren}
+			\item{Motivation / Anreize schaffen}
+			\item{PL und PM organisieren, interagieren}
 			\item{kommunizieren, kommunizieren, kommunizieren}
 			\item{Vertrauen aufbauen}
-			\item{Einzelgespräche mit Projektmitarbeitern}
+			\item{Neben Kompetenzen auch Befugnisse}
+			\item{Delegieren}
 		\end{itemize}
 	\end{frame}
 
-	\thispagestyle{empty}
-	\begin{frame}
+	\begin{frame}{PM-Prozesse}
 		
-		''Ein Prozess ist eine Maschinerie, die man als Schwein betritt und als Wurst verlässt.''  - Ambrose Bierce
+		\textbf{''Entscheidend ist, was hinten raus kommt.''}\\
+		- \textit{Helmut Kohl}
 		
 	\end{frame}
 	
 	\begin{frame}{Probleme in PM-Prozessen}
 		\begin{itemize}
-			\item{Definition (nach DIN): Prozess zur Planung, Überwachung und Steuerung von Projektphasen}
-			\item{iterativ und fordert Zeit}
+			\item{Definition (nach DIN 69 904): Prozess zur Planung, Überwachung und Steuerung von Projektphasen}
+			\item{iterativ und parallel}
 			\item{Projektmanagement wird als ''Methode'' gesehen, nicht als Organisationsansatz}
 			\item{Zeitprobleme}
 		\end{itemize}
 	\end{frame}
 	
-	% TODO: Beispiel
-	\begin{frame}{Probleme in PM-Prozessen - Beispiel}
-	
+	% TODO: Beispiel / PM-Prozess
+	\begin{frame}{Probleme in PM-Prozessen 2}
+		\includegraphics[width=0.9\textwidth]{images/pm_process}\footnote{http://www.maxwideman.com}
 	\end{frame}
 	
 	% TODO: Tipps
 	\begin{frame}{Probleme in PM-Prozessen - Tipps}
 		\begin{itemize}
 			\item{PM-Prozess als Organisationselement für das Unternehmen und die Unternehmeskultur}
-			\item{Einsatz von geeigneten Tools}
-			\item{Zertifizierung und Schulung}
+			\item{Einsatz von geeigneten Tools und Ressourcen}
+			\item{Zertifizierung}
+			\item{Schulung}
 		\end{itemize}
 		
 	\end{frame}
 	
-	\thispagestyle{empty}
-	\begin{frame}
-		''Teamwork = Wenn fünf Leute für etwas bezahlt werden, was vier billiger tun könnten, wenn sie nur zu dritt wären und zwei davon verhindert.''\\
+	\begin{frame}{Probleme im Team}
+		\textbf{''Teamwork = Wenn fünf Leute für etwas bezahlt werden, was vier billiger tun könnten, wenn sie nur zu dritt wären und zwei davon verhindert.''}\\
 - \textit{Charles Saunders}
 	\end{frame}
 
 	\begin{frame}{Probleme im Team}
 		\begin{itemize}
 			\item{Teamgröße}
-			\item{Fluktuation}
+			\item{Mitarbeiterfluktuation}
 			\item{Motivation}
-			\item{''Ich Kann`s am besten''}
+			\item{''Ich kann`s am besten''}
 			\item{Interessenskonflikte}
+			\item{Rivalität, soziale Bindung}
 		\end{itemize}
 	\end{frame}
 
@@ -277,24 +290,37 @@ um 10 \% bis 31.12.2013 reduzieren.
 		Jetzt kommt noch ein Erfahrungsbericht!	
 	\end{frame}
 
+	\begin{frame}{Probleme im Team - Tipps}
+		\begin{itemize}
+			\item{Motivation schaffen}
+			\item{Einrichtung eines Konfliktmanagements}
+			\item{Rivalitäten erkennen}
+		\end{itemize}
+
+	\end{frame}
+
+
 	\begin{frame}{Fazit}
 		Studie der GPM (wie auch andere) führen zu folgendem Ergebnis für erfolgreiches Projektmanagement:
 		\begin{itemize}
 			\item{Projektleiter in die Projektorganisation integrieren}
 			\item{Klare Ziele}
 			\item{Gute Kommunikation}
-			\item{Verständnis über PM als Organisationssturktur im Unternehmen}
+			\item{Verständnis über PM als Organisationsstruktur im Unternehmen}
 		\end{itemize}
 	\end{frame}
 	
-	% TODO: Quellen prüfen; ISBN usw.
 	\begin{frame}{Quellen}
-		Professionelles Projektmanagement (2011)\\
-		Roland Ottmann, Heinz Schelle\\ 
-		Projekte zum Erfolg führen (2006)\\
-		Heinz Schelle \\
-		GPM-Studie: Erfolg und Scheitern (2008)\\
-		\url{www.gpm-ipma.de/fileadmin/user_upload/Know-How/Ergebnisse_Erfolg_und_Scheitern-Studie_2008.pdf}
+		\begin{itemize}
+			\item{Professionelles Projektmanagement (2. Auflage, 2011)\\
+		\textit{Roland Ottmann, Heinz Schelle}
+		ISBN: 3-406-61988-6}
+			\item{Projekte zum Erfolg führen (6. Auflage, 2010)\\
+		\textit{Heinz Schelle}\\
+		ISBN: 3-423-05888-9}
+			\item{GPM-Studie: Erfolg und Scheitern (2008)\\
+		\url{www.gpm-ipma.de/fileadmin/user_upload/Know-How/Ergebnisse_Erfolg_und_Scheitern-Studie_2008.pdf}}
+		\end{itemize}
 		
 	\end{frame}
 	
@@ -308,8 +334,6 @@ um 10 \% bis 31.12.2013 reduzieren.
 	\end{frame}	
 	
 % ----- Quizfragen
-
-	% TODO: Quizfragen
 	
 	\begin{frame}{Unklare Projektziele - Quizfrage}
 		Gegeben sei folgendes Projektziel:\\
@@ -332,8 +356,7 @@ um 10 \% bis 31.12.2013 reduzieren.
 	\begin{frame}{Probleme im Team - Quizfrage}
 		\textbf{Wenn keine Lösung vom Projektleiter gefunden werden kann, dann ... ?}
 		\begin{itemize}
-			\item{Einrichten eines Eskalationsmanagements}
-			\item{}
+			\item{Konfliktmanagement und Eskalationsmanagement einsetzen}
 		\end{itemize}
 
 	\end{frame}
@@ -347,7 +370,7 @@ um 10 \% bis 31.12.2013 reduzieren.
 		\begin{itemize}
 			\item{Vertrauen schaffen}
 			\item{Konfliktmanagement}
-			\item{}
+			\item{Eksalationsmanagement}
 		\end{itemize}
 
 	\end{frame}
