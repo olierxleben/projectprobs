@@ -1,9 +1,9 @@
 %
 %
-\documentclass[11pt]{scrartcl}
+\documentclass[12pt]{scrartcl}
 
 % own geometry
-%\usepackage[a4paper, left=3cm, right=3cm]{geometry}
+\usepackage[a4paper, left=3cm, right=3cm]{geometry}
 
 \usepackage[ngerman]{babel} 
 \usepackage[utf8]{inputenc} 
@@ -13,6 +13,7 @@
 \usepackage{xcolor}
 \usepackage{jurabib}
 \usepackage{hyperref}
+\usepackage{here} % picture positioning
 
 \include{lib/jurabib}
 \bibliographystyle{jurabib}
@@ -64,8 +65,8 @@
 \textbf{Zusammenfassung}\\
 Die vorliegende Arbeit wurde mit LaTex verfasst und ist eine Arbeit von Oliver Erxleben für das Modul \textit{Projektmanagement und Führungstheorien} aus dem Master-Studiengang \textit{Informatik - Verteilte und Mobile Anwendungen} der \textit{Hochschule Osnabrück / University of Applied Sciences}.\\
 \\
-Thema der Arbeit lautet \textbf{Probleme im Projektmanagement und Führungstipps}. Es wird auf typische Problemstellen eines Projekts eingegangen, mit der das Projektmanagement konfrontiert wird. Die einzelnen Probleme werden dabei aus Sicht verschiedener Projektbeteiligter dargestellt.\\
-Die Arbeit ist in mehrere Abschnitte aufgeteilt. In der Einleitung wird nach der Motivation für Probleme im Projektmanagement auf Eckdaten und Begriffsefinitionen eingegangen.\\
+Das Thema der Arbeit lautet \textbf{Probleme im Projektmanagement und Führungstipps}. Es wird auf typische Problemstellen eines Projekts eingegangen, mit der das Projektmanagement konfrontiert wird. Die einzelnen Probleme werden dabei aus Sicht verschiedener Projektbeteiligter dargestellt.\\
+Die Arbeit ist in mehrere Abschnitte aufgeteilt. In der Einleitung wird nach der Motivation für Probleme im Projektmanagement auf Eckdaten und Begriffsefinitionen eingegangen.\\ % TODO: überarbeiten an neues Inhaltsverzeichnis
 Die darauffolgenden Abschnitte sind grob in die Phasen eines Projekts aufgeteilt, in der Probleme dieser Phase geschildert und analysiert werden. Nach jedem Abschnitt findet sich eine kurze pragmatische Zusammenfassung in der auch Tipps zur Problembewältigung gegeben werden.\\
 Im letzten Abschnitt werden die Erkenntnisse resümiert und ein Ausblick gegeben, wie Problemen in Zukunft vorgebeugt werden können.\\
 \\
@@ -79,22 +80,19 @@ Es sei erwähnt dass die Arbeit auf IT-Projekte abzielt. Besonders werden IT-Pro
 \setcounter{page}{1} 
 
 \section{Einleitung}
-Studien !!!!! belegen, dass weitaus mehr Projekte in Unternehmen scheitern, als das sie Erfolg haben. Das nachfolgende Diagramm stellt 
-\\
-Das Ziel dieser Arbeit ist es typische Probleme im Projektmanagement und im Projektverlauf aufzuzeigen, sowie Tipps und Ideen zu vermitteln wie Projektbeteiligte in Problemsituationen reagieren könnte um kritische Pässe innerhalb des Projekts zu meistern oder gar vorzubeugen. \\
-Werden 
 
-Warum ist Projektmanagement wichtig? Überleitung zu Projektmanagementproblem, da trotz PM viele Projekte scheitern
+Projekte scheitern! Projekte scheitern in der IT häufiger als sie Erfolg haben. Und das obgleich die Disziplin des \textit{''Projektmanagaments''} keine neue Erfindung ist und diese sich ständig weiter entwickelt und verstärkte Aufmerksamkeit in Unternehmen erfährt. So ist in den letzten Jahren zu verzeichnen das Projektportfolios und Projektauswahl mit der Unternehmens- und Geschäftsfeldstrategie abgestimmt werden. Fakt ist das Strategien, Produkte, Dienstleistungen oder Innovationen durch Projekte realisiert werden. Dies wird in Unternehmen immer mehr thematisiert.\\
+Diese Tendenz ist zwar gut, aber aufgrund der harten Fakten in Studien trotz allem scheinbar nicht genug. Diese Studien belegen das 46 \%\footnote{''Chaos-Report'' der Standish Group 2006} der IT-Projekte in Deutschland Wünsche und Anforderungen von Auftraggebern nur teilweise oder gar nicht erfüllt haben. Hinzukommt das 20 \% von IT-Projekten abgebrochen werden und nur 16 \% der IT-Projekte können als \textit{erfolgreich} eingestuft werden. Warum also scheitern so viele Projekte in der IT und welche Probleme und Problemsituationen gibt esin einem Projekt? Sind die Fachkompetenzen zu gering? Sind die Ziele eines Projekts zu hoch gegriffen? Ist die Führungsebene eines Unternehmens schuld? Oder arbeiten alle enfach nur zu wenig?\\
+Ähnliche Ergebnisse zum Erfolg, bzw. Misserfolg eines Projekts liefert auch eine Studie der GPM\footnote{deutsche Gesellschaft für Projektmanagement e.V.}, in der auch mögliche Probleme in IT-Projekten und Ursachen für das Scheitern von Projekten versucht wird herauszufinden (Details siehe Abschnitt \ref{studies_gpm}).\\ 
+Jedes Projekt, egal ob erfolgreich oder nicht, hat oder hatte Probleme zu verzeichnen. Seien es nun Probleme, wie z.B., Interessenskonflikte zwischen Projektbeteiligten und -mitarbeitern, sich ändernde Anforderungen oder das Problem das Projekt im Projektverlauf auf Kurs zu halten. \\
+Es ist die Kunst der Führung und des Projektmanagements, sowie der Führungsebene sich bildende oder aftretende Probleme  und kritische Pässe innerhalb eines Projekts frühzeitig zu erkennen, vorzubeugen oder schnell zu lösen. 
 
-\cite{tippsPM}
-
-\cite{studie_verhalten_projektmitarbeiter}
-
+\pagebreak
 % TODO: überarbeiten
 \subsection{Aufbau und Ablauf der Arbeit}
 Die vorliegende Arbeit gliedert sich in vier Teile: Einleitung, Projektplanung, Projektdurchführung, Projektabschluss und Fazit, wobei die Kapitel zwei bis vier den Hauptteil der Arbeit ausmachen. 
 \\ \\
-Im einleitenden Teil wird der Problembereich erläutert und es werden wichtige Begriffe für die weiteren Teile definiert und von einander abgegrenzt. 
+Im einleitenden Teil wird der Problembereich erläutert und es werden wichtige Begriffe für die weiteren Abschnitte definiert und von einander abgegrenzt. 
 \\ \\
 Der Hauptteil 2: Projektplanung erläutert typische Probleme während der Planung durch verschiedene Projektbeteilige und gibt Tipps zum Umgang mit Planungsproblemen. 
 \\ \\
@@ -105,42 +103,108 @@ Das letzte Kapitel des Hauptteils 4: Projektabschluß beschäftigt sich mit dem 
 Im Teil Fazit werden Erkenntnisse aus dem Hauptteil zusammengefast und bewertet.
 \\ \\
 Nach jedem Abschnitt aus dem Hauptteil werden Probleme zusammengefasst und als Gegenüberstellung mit Lösungsanseätzen gelistet. 
-\subsection{Was ist ein Projekt?}
+\subsection{Begriffsdefinitionen}
 
+Im Folgenden werden zentrale Begriffe für die Arbeit definiert. 
+
+\subsubsection{Projekt}
 
 \begin{quote}
 \colorbox{blue!5}{\textbf{Das Geheimnis des Erfolges ist die Beständigkeit des Ziels.}}\footnote{Benjamin Disraeli, britischer Schriftsteller u. Premierminister (21. Dez. 1804 - 19. April 1881)}
 \end{quote}
-Ein Projekt verfolgt immer ein Ziel, also eine bestimmte \textit{Zielvorgabe}. Zum Beispiel die Umsetzung eines Auftragsarbeit, oder die Erstellung einer Smartphone-Anwendung. Die Zielvorgabe besteht aus mehreren Einzelaufgaben und 
-
-\subsection{Projektphasen}
-
-Projektphasen lassen sich im Groben in drei Bereiche einteilen: Planung, Durchführung und Abschluss. 
-
-\subsection{Projektbeteiligte}
-
-Typische Rollen eines Projekt lassen sich in
-
-\subsection{Faktoren für Projekterfolg}
-
-Typische Merkmale für den Erfolg eines Projekts sind, nach IKMT:
+Ein Projekt verfolgt immer ein Ziel, also eine bestimmte \textit{Zielvorgabe}. Zum Beispiel die Umsetzung eines Auftragsarbeit, oder die Erstellung einer Smartphone-Anwendung. Die Zielvorgabe besteht aus mehreren Einzelaufgaben und ist \\
+\\
+Ein Projekt nach Aussage der DIN-Begriffsnorm 69 901 allgemein defniniert durch \texttt{''ein Vorhaben, das im Wesentlichen durch die Einmaligkeit der Bedingung in ihrer Gesamheit gekennzeichnet ist, wie z.B. 
 \begin{itemize}
-\item{Planung und Organisation}
-\item{Aufgabenanalyse}
-\item{Kunden- und Anwenderbeteiligung}
-\item{}
-\end{itemize}
+    \item{Zielvorgabe}
+    \item{zeitliche, finanzielle, personelle und andere Begrenzungen}
+    \item{Abgrenzung gegenüber anderen Vorhaben}
+    \item{projektspezifische Organisation}
+\end{itemize}''}
+gekennzeichnet. Im weiteren Vergleich mit \cite{proj_zum_erfolg_fuehren} (Kapitel 2, Seite 19 ff.) wird die in der DIN-Begriffsnorm eingetragenen Merkmale noch um die Beteiligung von Menschen, Arbeitsgruppen und Institutionen hinzugefügt und die Existenz eines \textit{Ein-Personen-Projekts} ausgeschlossen. Mit beiden Ergänzungen und der DIN-Definition wird in den nachfolgenden Kapiteln ein Projekt verstanden. 
 
-% TODO: Diagram hier
+\subsubsection{Phasen, Meilensteine und Aktivitäten}
+
+Unter \texttt{Projektphasen} werden Ereignisse in einem Phasenmodell\footnote{auch bez. als Phasenmodell, Vorgehensmodell, Prozessmodell} verstanden, die zeitleich aufeinander folgen. So kann das Testen einer Software beispielsweise nicht vor dessen Planungsphase stattfinden. Das Phasenmodell dient als Hilfsmittel im Projektmanagement. \\
+\\
+Ein \texttt{Meilenstein} ist im Vergleich zur Projektphase (nach DIN 69 900) \texttt{ein Ereignis besonderer Bedeutung}. Meist erhält ein Meilenstein einen geplanten Termin und Inhalte die zu diesem Termin vom Projekt umgesetzt sein müssen. \\
+\\
+Zusätzlich zu Phasen und Meilensteine können auch \texttt{Aktivitäten} definiert werden. Sie beschreiben \textit{was} in den verschiedenen Projektabschnitten getan werden muss um ein Teilergebnis erzielen zu können.  
+
+\subsubsection{Projektmanagement}
+Die DIN definiert Projektmanagement als \texttt{die Gesamtheit von Führungsaufgaben, -organistion, -tecniken und -mittel für die Abweicklung eines Projekts}.\\
+\\
+Von der Disziplin \texttt{Projektmanagement} kann, wenn auch schon immer Vorhaben durchgeführt wurden, seit den 1950ern geredet werden. Geprägt wurde das Projektmanagement stark vom Militär und der Luft- und Weltraumindustrie der USA. Dort waren starke Termin- und Kostenüberschreitungen fatal für die Auftraggeber. Gerade die Luft- und Raumfahrtindustrie trug maßgeblich zu den anfänglichen Techniken im Projektmanagement bei\footnote{Vgl. \cite{proj_zum_erfolg_fuehren}, Die Entwicklung der Disziplin Projektmanagement, Seite 23 f.}. 
+\\
+Es kann aber auch als \textit{Führungskonzept} verstanden werden (Vgl. \cite{scriptPM}, Seite 7), bei dem die Aufgaben und Methoden des Projektmanagements auf die strategischen Zielen und der Entwicklung des Unternehmens verknüpft werden müssen. 
+
+\subsubsection{Projektleitung}
+% TODO: \cite proj_zum_erfolg_fuehren ?!
+Als Projektleitung wird die omni-verantwortliche Person für ein Projekt bezeichnet. \cite{proj_zum_erfolg_fuehren} bezeichnet den Projektleiter als \texttt{Unternehmer auf Zeit im Unternehmen}. \\
+\\
+Der Projektleiter hat die Verantwortung über den Erfolg oder Misserfolg seines Projekts. Es ist \textit{sein} Projekt. Er ist verantwortlich für die Realisierung der definierten Projektziele, Termineinhaltung, Kosten- und Qualitätsgarantie und der Koordination der Projektbeteiligten. 
+
+%\subsubsection{Projektbeteiligte}
 
 \pagebreak
-\section{Probleme während der Projektphasen}
+\section{Projekte scheitern}
 
-\subsection{Planungsphase}
+Dieser Abschnitt wertet verfügbare Studien aus, die für die Erörterung von PM-Problemen maßgeblich sind, fasst diese zusammen und gibt einen Überblick über die Situation (dem \textit{warum} Projekte scheitern) nach Aussage dieser Studien. 
 
-\subsection{Projektverlauf}
+\subsection{Aktuelle Lage}
+% TODO: verfassen
+Die aktuelle Situation in der Projektmanagement-Landschaft lässt sich mit folgenden 
 
-\subsection{Projektabschluß}
+\subsection{Studie der GPM}
+\label{studies_gpm}
+
+% TODO: footnote
+Die deutsche Gesellschaft für Projektmanagement e.V., gegründet 1979, hat sich als \textit{der} Berufsverband für Projektmanagement etabliert. Ihr gehören ca. 250 Unternehmen und  über 4500 Mitglieder an\footnote{Stand 31.12.2008, Vgl. siehe \cite{proj_zum_erfolg_fuehren}, Kapitel 24 Seite 311}. Neben Publizierungen, wie die Zeitschrift ''Der Projektmanager'', bietet die GPM auch Zertifizierungen oder Weiterbildungsseminare an und betreibt Studien. \\
+Eine dieser Studien, die Projektmanagementstudie aus dem Jahr 2008, ist für diese Ausarbeitung besonders nützlich: \texttt{Erfolg und Scheitern im Projektmanagement}. Sie ist in Kooperation mit der PA Consulting Group\footnote{} entstanden und beschreibt nicht nur die aktuellen Probleme in Projekten und dem Projektmanagement, sondern versucht auch Gründe für das Scheitern, wie auch für den Erfolg von Projekten herauszufinden. 
+
+\subsubsection{Erhobene Daten}
+
+Die Studie erhebt zweierlei Arten von Daten. Zum einen wurden Fragen zur Projektkultur gestellt (allgemeiner Natur), zum anderen spezielle Fragen zu erfolgreichen und gescheiterten Projekten. Die Abbildung \ref{fragen_gpm_studie} zeigt exemplarische Fragen zur Projektkultur und zu den speziellen Projekten. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{img/fragen_gpm_studie}
+		\caption{Fragen der GPM-Studie}
+		\label{fragen_gpm_studie}	
+	\end{center}
+\end{figure}
+
+\subsubsection{Teilnehmer}
+
+Neben der Frage \textit{welche} Daten erhoben werden, muss auch geklärt werden, \texttt{wer} an der Studie teilgenommen hat. Dies waren 79 Unternehmen, überwiegend Organisationen mit mehr als 1000 Mitarbeitern und auch überwiegend Jahresumsätze von mehr als 1 Mrd. EUR (\textit{Vgl. siehe \cite{GPM_Studie_2008}, Seite 4}).\\
+Es wurde versucht eine hohe Branchenvielfalt zu erreichen. Die Abbildung \ref{teilnehmer_gpm_studie} zeigt die prozentuale Teilnahme verschiedenster Branchen am Markt. Zu erwähnen sei noch, dass es einen hohen Anteil an von Unternehmen teilgenommen haben, die schon an früheren Studien der GPM oder PA-Group teilgenommen haben. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{img/teilnehmer_gpm_studie}
+		\caption{Teilnehmer der GPM-Studie}
+		\label{teilnehmer_gpm_studie}	
+	\end{center}
+\end{figure}
+
+\subsubsection{Ergebnis der Projektmanagement-Kultur}
+
+Das Ergebnis der Befragung der Projektmanagement-Kultur ist in Abbildung \ref{erfgebnis_gpm_studie_pmk} zu sehen. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=1.0\textwidth]{img/ergebnis_gpm_studie_kultur}
+		\caption{Ergebnis der GPM-Studie der Projektmanagement-Kultur}
+		\label{erfgebnis_gpm_studie_pmk}	
+	\end{center}
+\end{figure}
+
+Wie in Abbildung \ref{erfgebnis_gpm_studie_pmk} zu sehen ist werden zu wenig Boni für erfolgreiche Projektarbeit angeboten und auch zu wenig Karrierechancen als Projektleiter werden eingeräumt, Projektorganisation gleicht der Linienorganisation, nur zu wenig Erfahrung aus früheren Projekten werden dokumentiert und in anderen Projekten genutzt.
+
+\subsubsection{Ergebnis Einzelprojekte}
+Für die vorliegende Ausarbeitung ist allerdings wesentlich interessanter, was die Gründe für Erfolg oder Misserfolg von einzelnen Projekten sei. 
+
+\subsection{Ergebnis, Auswertung}
 
 In der Planungsphase eines Projekts ist die Aufgabe des Projektmanagements vor allem die Aufstellung des Projektziels und der zugehörigen Teilaufgaben jeder Projektphase. Weiterhin muss eine Projektorganisation ausgearbeitet werden. \\
 Ein Problem, welches aber oft erst in der Durchführungsphase erst erkannt wird ist die \textbf{nicht ausreichende, schlechte Definition des Projektziels, bzw. dessen Teilziele}.
@@ -173,17 +237,14 @@ Während des Projektverlaufs entstehen oft Probleme, die entweder schon in der P
 
 \subsection{Change Management}
 
-\subsection{}
-
-\pagebreak
-\section{Probleme beim Abschluss eines Projekts} 
 \cite{profPM}
 \cite{scriptPM}
 \cite{chaosReportCriteria}
 
-\section{Mangelhafte Kommunikation}
-\section{schlechte Vorbereitung und Planung}
-\section{Unklare Rollenverteilung}
+\pagebreak
+\section{Kommunikationsprobleme}
+\section{Projektziele}
+\section{Rollenverteilung und Projektleiter}
 \section{mangelnde Ressourcenverteilung}
 
 
